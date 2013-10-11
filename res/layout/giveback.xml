@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffd7a9">
+    <include layout="@layout/titlebar" />
+    <EditText
+        android:id="@+id/giveback_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:hint="提出您的宝贵意见，我们会更加努力！"
+        android:layout_marginTop="10dip"
+        android:maxLength="300"
+        android:gravity="top"/>
+    <Button
+        android:id="@+id/giveback_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/giveback_icon"
+        />
+   
+</LinearLayout>

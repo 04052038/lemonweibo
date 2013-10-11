@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.star.yytv"
+    android:versionCode="20"
+    android:versionName="1.1" >
+    
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <application
+        android:icon="@drawable/yytv_smallicon"
+        android:label="@string/app_name" >
+
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:name="com.star.yytv.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="SplashActivity"
+                    android:scheme="weibo4andriod" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.star.yytv.Front"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.star.weibo.Home" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.WeiboUpdater" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.WeiboDetail" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.UserInfo" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.UserList" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.TrendList" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.WeiboList" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.UserInfoEditor" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.CommentList" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.ImageViewZoomActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.star.weibo.WebViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.WeiboRepost" android:screenOrientation="portrait" />
+	    <activity android:name="com.star.weibo.UserDealActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.UserInfoDetail" android:screenOrientation="portrait" />
+        <activity android:name="com.star.weibo.SelfAbout" android:screenOrientation="portrait" />
+	    <activity android:name="com.star.yytv.LoginActivity" android:screenOrientation="portrait" />
+	    <activity android:name="com.star.yytv.BasicActivity" android:screenOrientation="portrait" />
+
+        
+    </application>
+    
+    <supports-screens android:largeScreens="true"
+          android:normalScreens="true"
+          android:smallScreens="true"
+          android:anyDensity="true" />
+        
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+</manifest>

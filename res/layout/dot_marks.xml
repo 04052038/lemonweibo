@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/dot_mark1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_default" />
+
+    <ImageView
+        android:id="@+id/dot_mark2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_default" />
+
+    <ImageView
+        android:id="@+id/dot_mark3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_default" />
+    
+    <ImageView
+        android:id="@+id/dot_mark4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_default" />
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/dot_mark5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_default" />
+
+</LinearLayout>

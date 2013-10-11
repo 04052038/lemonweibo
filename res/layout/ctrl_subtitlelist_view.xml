@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ctrl_mainLayout" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#ffd7a9" 
+    android:orientation="vertical">
+    
+    <include layout="@layout/ctrl_header" />
+
+    <TextView 
+        android:id="@+id/ctrl_subtitle" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"        
+        android:textSize="18dip" 
+        android:paddingLeft="5dip"
+        android:textColor="#000000" 
+        android:background="#D4D0C8" 
+        android:text="" />
+    
+    <ListView 
+        android:id="@+id/ctrl_mainlist" 
+        android:descendantFocusability="blocksDescendants" 
+        android:layout_width="fill_parent" 
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dip"
+        android:background="#ffd7a9"
+        android:scrollbars="none"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"        
+        android:fastScrollEnabled="false" /> 
+</LinearLayout>

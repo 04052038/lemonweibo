@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tasklist_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="2dip"
+        android:text="100积分"/>
+    <TextView
+        android:id="@+id/tasklist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:textSize="18sp"
+        android:textColor="#3333FF"
+        android:text="给电影《2012》写影评"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:src="@drawable/triangle"/>
+
+</LinearLayout>

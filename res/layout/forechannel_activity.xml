@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffd7a9"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/titlebar_bg_nor">
+    <Button android:id="@+id/titlebar_back" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:background="@drawable/title_back"
+        android:layout_centerVertical="true"/>
+    <LinearLayout android:id="@+id/titlebar_point"
+        android:layout_width="fill_parent" android:layout_height="44dip"
+        android:gravity="center">
+        <TextView android:id="@+id/channel_change_channelname"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#FFffffff" android:gravity="center" android:textStyle="bold"
+            android:textSize="18.0sp"/>
+    </LinearLayout>
+     <Button android:id="@+id/forechannel_followchannel" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:background="@drawable/title_fav_normal"
+        android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" 
+        android:gravity="center"
+        android:orientation="horizontal"
+        
+         >
+
+        <TextView
+            android:id="@+id/forechannel_first_date"
+            android:text="星期一"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"    
+            android:gravity="center"        
+            
+            android:textColor="@color/red1"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/forechannel_second_date"
+            android:text="星期二"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"         
+            android:gravity="center"   
+            
+            android:textColor="@color/black"
+            android:textSize="15.0dip"
+             />
+
+        <TextView
+            android:id="@+id/forechannel_third_date"
+            android:text="星期三"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"        
+            android:gravity="center"    
+            
+            android:textColor="@color/black"
+            android:textSize="15.0dip"
+             />
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe7cc" >
+    <ImageView
+        android:id="@+id/fore_cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+            android:src="@drawable/cursor"/>
+</LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fore_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#ffd7a9"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

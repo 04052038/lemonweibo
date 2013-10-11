@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="#00ffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:minHeight="50dip">
+    <RelativeLayout
+        style="@style/margin_set"
+        android:orientation="horizontal" 
+        android:background="@drawable/item_select_bg">
+    <RelativeLayout
+        android:id="@+id/ctrl_channel_chname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentLeft="true">
+        
+        <ImageView
+            android:id="@+id/ctrl_channel_chimg"
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        
+        <TextView 
+            android:id="@+id/ctrl_channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dip"
+            android:textColor="#000000"
+            android:layout_below="@id/ctrl_channel_chimg" />
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/ctrl_channel_chid"
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:background="@drawable/ctrl_pop_button_shape"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="14dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true" />
+    </RelativeLayout> 
+</LinearLayout>

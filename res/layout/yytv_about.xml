@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#ffd7a9">
+    <include layout="@layout/titlebar" />
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="1.0"
+        android:layout_marginTop="20dip">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="11.0"
+        android:src="@drawable/yytv_icon"
+        android:layout_marginBottom="10dip"/>
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#a35319"
+        android:textSize="20.0sp"
+        android:text="清新柠檬      自由简单"
+        />
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#a32d00"
+        android:textSize="15.0sp"
+        android:text="" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#a32d00"
+        android:textSize="16.0sp"
+        android:text="柠檬微博客户端"
+        android:layout_marginBottom="5dip" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#a32d00"
+        android:textSize="15.0sp"
+        android:text="版本号： v1.0.0" /> 
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#a32d00"
+        android:textSize="15.0sp"
+        android:text="作者： 杨云龙" />
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:textColor="#a32d00"
+        android:textSize="15.0sp"
+        android:text="微博@痞子龙AlPacino" /> 
+   
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.6"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="center|bottom">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.8">       
+    </LinearLayout>
+   
+        <Button
+            android:id="@+id/yytv_about_userdeal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="18dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/ctrl_pop_button_shape"
+            android:text="退出当前帐号"
+            android:textSize="15.0sp"
+            android:textColor="#ffffff"/>
+        </LinearLayout>
+</LinearLayout>

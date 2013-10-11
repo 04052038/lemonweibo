@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1.0"
+	    android:background="#b0000000" 
+	    android:orientation="vertical">
+	</LinearLayout>
+	
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1.2"
+	    android:background="#b0000000">
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"	    
+		    android:layout_marginTop="5dip"
+		    android:paddingBottom="5dip"
+		    android:background="@drawable/ctrl_pop_txt_shape" 
+		    android:orientation="vertical">
+		    
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		        android:layout_marginBottom="5dip"  >
+		        
+		        <TextView 
+			        android:id="@+id/ctrl_channel_poptitle" 
+			        android:layout_width="fill_parent" 
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dip"
+		            android:layout_marginRight="10dip"		        
+			        android:gravity="center"
+			        android:layout_centerInParent="true" 
+			        android:textSize="16dip" 
+			        android:textColor="#d04509" 
+			        android:background="#ffffff" 
+			        android:textStyle="bold"
+			        android:text="" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_exit"
+		            android:layout_width="30dip"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="10dip"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/close_normal"/>	        
+		    </RelativeLayout>   
+		    
+		    <View
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dip"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="5dip"
+		        android:background="#ff935e" />
+		    
+		    <TextView
+		        android:id="@+id/ctrl_channel_number"
+		        android:layout_width="fill_parent"
+		        android:layout_height="30dip"
+		        android:gravity="center"
+		        android:layout_marginTop="5dip"
+		        android:layout_marginBottom="5dip"
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:textSize="16dip" 
+		        android:textColor="#d04509" 
+		        android:background="@drawable/ctrl_pop_txt_shape" />
+		    
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1.0"
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:layout_marginTop="5dip">
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num1"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:textSize="16dip"
+		            android:text="1" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num2"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="2" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num3"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="3" />	        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:layout_marginTop="5dip">
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num4"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:textSize="16dip"
+		            android:text="4" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num5"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="5" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num6"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="6" />	        
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:layout_marginTop="5dip">
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num7"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:textSize="16dip"
+		            android:text="7" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num8"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="8" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num9"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="9" />	        
+		    </LinearLayout>
+		    
+		   <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:layout_marginTop="5dip">
+		        
+		       <Button
+		            android:id="@+id/ctrl_channel_ok"
+		            android:background="@drawable/ctrl_pop_button_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:textSize="16dip"
+		            android:textColor="#fff"
+		            android:text="确定" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_num0"
+		            android:background="@drawable/ctrl_pop_num_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:text="0" />
+		        
+		        <Button
+		            android:id="@+id/ctrl_channel_del"
+		            android:background="@drawable/ctrl_pop_button_shape"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:layout_marginLeft="5dip"
+		            android:textSize="16dip"
+		            android:textColor="#fff"
+		            android:text="删除" />	        
+		    </LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>	

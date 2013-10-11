@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#D4D0C8"    
+    android:orientation="vertical">
+    	        
+	<TextView
+	    android:id="@+id/ctrl_boxinfo"
+		android:layout_width="fill_parent"
+		android:layout_height="40dip"
+		android:background="@drawable/ctrl_yy_button_shape"
+		android:layout_marginTop="3dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:layout_marginBottom="3dip"
+		android:gravity="center"
+		android:textColor="#fff"
+		android:textSize="16dip"
+		android:text="" />
+		        
+</LinearLayout>

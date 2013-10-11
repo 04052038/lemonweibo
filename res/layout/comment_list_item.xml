@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="#00ffffff">
+	<LinearLayout
+	    android:orientation="vertical"
+	    style="@style/margin_set"
+        android:background="@drawable/item_select_bg" android:descendantFocusability="blocksDescendants">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+		<TextView android:id="@+id/commentListItem_nick"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1" android:textColor="#FF0077aa"
+			android:textSize="15.0sp" android:text="nick" />
+		<TextView android:id="@+id/commentListItem_createTime"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#FFaaaaaa" android:textSize="15.0sp" android:text="09-18 14:39" />
+	</LinearLayout>
+	<com.star.weibo.adapter.ClickPreventableTextView android:id="@+id/commentListItem_content"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginBottom="5.0dip" android:textColor="#FF000000"
+		android:textSize="17.0sp" android:text="评论" />
+    </LinearLayout>
+</LinearLayout>

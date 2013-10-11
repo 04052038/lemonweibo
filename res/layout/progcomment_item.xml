@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+    <LinearLayout
+        style="@style/margin_set"
+        android:orientation="horizontal"
+        android:background="@drawable/item_select_bg">
+    <!-- 头像 -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/progcomment_image"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:background="@drawable/portrait_normal"
+            android:paddingBottom="12.0dip"
+            android:paddingRight="8.0dip"
+            android:src="@drawable/portrait" />
+
+        <TextView
+            android:id="@+id/progcomment_username"
+            android:layout_width="42.0dip"
+            android:layout_height="12.0dip"
+            android:layout_gravity="bottom|center"
+            android:singleLine="true"
+            android:text="sinwaj"
+            android:textColor="@color/black"
+            android:textSize="8.0dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/progcomment_comment1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.0dip"
+                android:text="评论内容"
+                android:textColor="#FF202020"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/progcomment_timelabel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="评论时间:"
+                    android:textColor="#FF202020"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/progcomment_datatime1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="12-27 00:00"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progcomment_framelayout"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="vertical" 
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/progcomment_del"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:background="@drawable/portrait_normal"
+            android:paddingBottom="0.0dip"
+            android:paddingRight="0.0dip"
+            android:src="@drawable/ic_delete" />
+    </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

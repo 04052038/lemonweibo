@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#ffd7a9">
+	<include android:id="@+id/repost_titlebar" layout="@layout/titlebar" />
+	
+	<com.star.weibo.xlist.XListView
+	    android:id="@+id/repost_weiboList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:background="@drawable/weibo_first_login2"
+	    android:cacheColorHint="#00000000"
+	    android:divider="#00000000"
+	    android:fastScrollEnabled="true"
+	    android:focusable="true"
+	    android:scrollbars="none">
+
+	</com.star.weibo.xlist.XListView>
+	
+	
+</LinearLayout>

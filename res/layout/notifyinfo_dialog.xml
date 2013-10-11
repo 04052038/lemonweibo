@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notifyinfo_layout"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ctrl_pop_view_shape"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="#ffffffff"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginLeft="1dip"
+        android:orientation="horizontal" >
+
+        <!-- name -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:singleLine="true"
+            android:text="预约节目表"
+            android:textColor="#FF202020"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/notifyinfo_autoswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="25dip"            
+            android:text="自动换台"
+            android:textColor="#FF999999"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+        
+       
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#D04509" />
+
+    <ListView
+        android:id="@+id/notifyinfo_bookprog_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="1dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginLeft="1dip"
+        android:background="#ffd7a9"
+        android:cacheColorHint="#00000000"
+        android:divider="#00ffffff"
+        android:dividerHeight="4dip"
+        android:fastScrollEnabled="true"
+        android:focusable="true" >
+    </ListView>
+
+</LinearLayout>

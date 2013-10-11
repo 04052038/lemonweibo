@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+    <LinearLayout
+        style="@style/margin_set"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/item_select_bg">
+    <!-- trend -->
+    <TextView
+        android:id="@+id/trend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:text=""
+        android:textSize="18.0sp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"/>
+    </LinearLayout>
+</LinearLayout>

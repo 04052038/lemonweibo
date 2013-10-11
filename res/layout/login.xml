@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee">
+    <RelativeLayout
+        android:id="@+id/login_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:orientation="horizontal"
+        android:background="@drawable/titlebar_bg_nor">
+        <Button android:id="@+id/tvtitlebar_refresh" android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/tvtitlebar_reload"/>
+        <ImageView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/navlogo"            
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@drawable/weibo_first_login"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weibo_first_login_head"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weibo_first_login_name"/>
+        <Button
+            android:id="@+id/login_in"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/weibo_first_login_btn"
+            android:layout_marginLeft="5dip"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

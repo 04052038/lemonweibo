@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_selected="true">
+    <shape 
+    android:shape="rectangle">
+    <solid
+        android:color="#88D04509" />
+    <stroke
+        android:width="0.1dip" 
+        android:color="#88D04509" />
+    <corners
+        android:topLeftRadius="5dip"
+        android:topRightRadius="5dip"
+        android:bottomLeftRadius="5dip"
+        android:bottomRightRadius="5dip" />
+    <padding 
+        android:left="1dp" 
+        android:top="1dp"
+        android:right="1dp" 
+        android:bottom="1dp" />
+    </shape>
+    </item>
+    <item  android:state_pressed="true">
+    <shape 
+    android:shape="rectangle">
+    <solid
+        android:color="#88D04509" />
+    <stroke
+        android:width="0.1dip" 
+        android:color="#88D04509" />
+    <corners
+        android:topLeftRadius="5dip"
+        android:topRightRadius="5dip"
+        android:bottomLeftRadius="5dip"
+        android:bottomRightRadius="5dip" />
+    <padding 
+        android:left="1dp" 
+        android:top="1dp"
+        android:right="1dp" 
+        android:bottom="1dp" />
+    </shape>
+    </item>
+    <item >
+    <shape 
+    android:shape="rectangle">
+    <solid
+        android:color="#ece9d8" />
+    <stroke
+        android:width="1dip" 
+        android:color="#AEAEAE" />
+    <corners
+        android:topLeftRadius="5dip"
+        android:topRightRadius="5dip"
+        android:bottomLeftRadius="5dip"
+        android:bottomRightRadius="5dip" />
+    <padding 
+        android:left="1dp" 
+        android:top="1dp"
+        android:right="1dp" 
+        android:bottom="1dp" />
+    </shape>
+    </item>
+</selector>

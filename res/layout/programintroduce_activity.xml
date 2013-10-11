@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/columnintroduce_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFd7a9"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <include
+        android:id="@+id/column_titlebar"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/columnintroduce_userinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#ffffffff"
+        android:orientation="horizontal" >
+        <!-- name -->
+
+        <TextView
+            android:id="@+id/columnintroduce_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:text="新闻联播"
+            android:textColor="#FF202020"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#ffffffff">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.0"
+                android:gravity="center">
+            <Button
+                android:id="@+id/columnintroduce_good"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:background="@drawable/good"                
+                 />
+            <TextView
+                android:id="@+id/good_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:textColor="#FF5779A7"
+                android:textSize="16.0sp"
+                android:text="0"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.0"
+                android:gravity="center">
+            <Button
+                android:id="@+id/columnintroduce_bad"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:background="@drawable/bad"             
+                />
+            <TextView
+                android:id="@+id/bad_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:textColor="#FF5779A7"
+                android:textSize="16.0sp"
+                android:text="0"/>
+            </LinearLayout>
+           
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.0"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/prog_userinfo_book_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:text="预约"        
+                />
+            <TextView
+                android:id="@+id/columnintroduce_userinfo_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="#FF5779A7"
+                android:textSize="16.0sp"
+                android:text="0"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.0"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/prog_userinfo_watch_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:textSize="16.0sp"
+                android:textStyle="bold"
+                android:text="观看"        
+                />
+            <TextView
+                android:id="@+id/columnintroduce_userinfo_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="#FF5779A7"
+                android:textSize="16.0sp"
+                android:text="0"/>
+            </LinearLayout>
+     </LinearLayout>
+    <!-- 关注 微博  粉丝 话题 -->
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/prog_radio_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/maintab_toolbar_bg"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/prog_detail_layout"
+            android:gravity="center"
+            android:state_checked="true"
+            style="@style/main_tab_bottom"
+            android:textColor="#FFffffff"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:text="节目简介" />
+        <RadioButton
+            android:id="@+id/prog_commentlist_layout"
+            android:gravity="center"
+            android:state_checked="false"
+            style="@style/main_tab_bottom"
+            android:textColor="#FFffffff"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:text="节目评论" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:background="#ffd7a9">
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/progcomment_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="2dip"           
+            android:cacheColorHint="#00000000"
+            android:divider="#00ffffff"
+            android:fastScrollEnabled="true"
+            android:focusable="true" >           
+        </ListView>
+        <LinearLayout
+            android:id="@+id/columnintroduce_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <!-- detail -->
+
+            <TextView
+                android:id="@+id/prog_introduce_programcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="无内容"
+                android:textColor="#FF414951"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/prog_introduce_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/detail_pic_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/preview_pic_loading" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- bottom -->
+
+    <LinearLayout
+        android:id="@+id/prog_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" 
+        android:background="@drawable/maintab_toolbar_bg">
+        
+        <Button
+            android:id="@+id/columnintroduce_refresh"
+            style="@style/detail_bottom"
+            android:layout_marginLeft="1dip" android:layout_marginRight="1dip"
+            android:drawableTop="@drawable/ui_icon_reflesh"
+            android:text="刷新"            
+            />
+
+        <Button
+            android:id="@+id/columnintroduce_comment"
+            style="@style/detail_bottom"
+            android:layout_marginRight="1dip"
+            android:drawableTop="@drawable/btn_insert_topic"
+            android:text="评论" 
+             />
+
+        <Button
+            android:id="@+id/columnintroduce_follow"
+            style="@style/detail_bottom"
+            android:layout_marginRight="1dip"
+            android:drawableTop="@drawable/toolbar_focus_icon"
+            android:text="换台" 
+             />
+ 
+        <Button
+            android:id="@+id/columnintroduce_book"
+            style="@style/detail_bottom"
+            android:layout_marginRight="1dip"
+            android:drawableTop="@drawable/toolbar_dating_icon"
+            android:text="预约" 
+            />
+    </LinearLayout>
+
+</LinearLayout>
